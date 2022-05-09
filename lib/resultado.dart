@@ -12,7 +12,7 @@ class _resultadoState extends State<resultado> {
   @override
   Widget build(BuildContext context) {
 
-      var caminhoImage = "images/moeda_cara.png";
+      var caminhoImage ;
 
       if( widget.Valor == "cara"){
         caminhoImage = "images/moeda_cara.png";
