@@ -21,7 +21,7 @@ class _resultadoState extends State<resultado> {
           children: <Widget>[
              Image.asset("iamges/"),
             GestureDetector(
-              onTap: Navigator.pop(context),
+              onTap: Navigator.pop(contex),
               child: Image.asset("images/botao_voltar.png"),
             )
           ],
