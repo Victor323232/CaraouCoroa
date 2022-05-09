@@ -1,17 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:cara_ou_coroa/game.dart';
 
 class resultado extends StatefulWidget {
-  const resultado({Key? key}) : super(key: key);
+  var Valor;
+   resultado (this.Valor);
 
   @override
   State<resultado> createState() => _resultadoState();
 }
 
 class _resultadoState extends State<resultado> {
-  
   @override
   Widget build(BuildContext context) {
+
+      var caminhoImage;
+
+      if( widget.Valor == "cara"){
+        caminhoImage = "images/moeda_cara.png";
+      }else{
+        caminhoImage = "images/moeda_moeda.png";
+      }
+
     return Scaffold(
       backgroundColor: Color(0xff61bd86),
       body: Container(
@@ -19,7 +27,7 @@ class _resultadoState extends State<resultado> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-             Image.asset("iamges/"),
+             Image.asset(caminhoImage),
             GestureDetector(
               onTap: (){
                 Navigator.pop(context);
