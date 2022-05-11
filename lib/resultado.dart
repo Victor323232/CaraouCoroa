@@ -14,7 +14,7 @@ class _resultadoState extends State<resultado> {
 
       var caminhoImage ;
 
-      if( widget.Valor == "cara"){
+      if( widget.Valor == "Cara"){
         caminhoImage = "images/moeda_cara.png";
       }else{
         caminhoImage = "images/moeda_coroa.png";

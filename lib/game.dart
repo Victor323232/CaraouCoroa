@@ -15,7 +15,7 @@ class _gameState extends State<game> {
 
 
   void _exibirResultado(){
-    var _itens = ["cara","coroa"];
+    var _itens = ["Cara","Coroa"];
     var numero = Random().nextInt( _itens.length );
     var _resultado =  _itens[numero];
     Navigator.push(
